@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Negar Haghpanahi</title>
+<meta name="description" content="Negar Haghpanahi, PhD student in Computer Science at Washington State University. Edge AI, energy-efficient on-device inference, and clinical AI for traumatic brain injury.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{
+  --bg:#FFFFFF; --panel:#F6F2F3; --ink:#221E1F; --muted:#665C5F; --rule:#E4DADC;
+  --accent:#981E32; --link:#981E32; --btn-ink:#FFFFFF; color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#171415; --panel:#221D1F; --ink:#F1ECED; --muted:#B5A9AC; --rule:#3A3134;
+         --accent:#B8324A; --link:#EE8FA0; --btn-ink:#FFFFFF; color-scheme:dark; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;padding-inline:20px}
+.wrap{max-width:760px;margin:0 auto;padding-block:56px 64px}
+h1{font:800 clamp(34px,7vw,52px)/1.05 "Libre Franklin",Arial,sans-serif;margin:0 0 10px;letter-spacing:-.01em}
+.role{font-size:19px;margin:0 0 4px}
+.place{color:var(--muted);margin:0}
+.top{display:flex;align-items:center;gap:28px;flex-wrap:wrap-reverse}
+.top .who{flex:1 1 320px;min-width:0}
+.photo{width:150px;height:150px;border-radius:50%;object-fit:cover;border:3px solid var(--panel);flex:0 0 auto}
+.intro{margin:22px 0 0;max-width:62ch;font-size:18px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:16px;padding:9px 18px;border-radius:999px;border:1.5px solid var(--accent);color:var(--link)}
+.btn.primary{background:var(--accent);color:var(--btn-ink)}
+.btn:hover{text-decoration:underline}
+a{color:var(--link)}
+a:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+h2{font:800 14px/1.3 "Libre Franklin",Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:52px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.item{margin:0 0 22px}
+.item h3{font:600 19px/1.3 "Libre Franklin",Arial,sans-serif;margin:0 0 4px}
+.item h3 a{color:var(--ink);text-decoration-color:var(--link);text-underline-offset:3px}
+.meta{color:var(--muted);font-size:15px;margin:0 0 6px}
+.item p{margin:0;max-width:65ch}
+.tag{display:inline-block;font-size:13px;font-weight:600;color:var(--link);border:1px solid var(--rule);border-radius:999px;padding:1px 10px;margin-left:6px;vertical-align:2px}
+.row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.row .when{color:var(--muted);font-size:15px;font-variant-numeric:tabular-nums;white-space:nowrap}
+ul.plain{list-style:none;padding:0;margin:0}
+ul.plain li{margin:0 0 12px}
+ul.dots{margin:6px 0 0;padding-left:1.2em;max-width:65ch}
+ul.dots li{margin:0 0 4px}
+.skills p{margin:0 0 8px;max-width:68ch}
+.skills b{font-weight:600}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--rule);color:var(--muted);font-size:15px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="top">
+      <div class="who">
+        <h1>Negar Haghpanahi</h1>
+        <p class="role">PhD Student in Computer Science · Graduate Research Assistant</p>
+        <p class="place">Washington State University, Pullman, WA · Advisor: Dr. Ganapati Bhat</p>
+      </div>
+      <img class="photo" src="photo.jpg" alt="Photo of Negar Haghpanahi" onerror="this.remove()">
+    </div>
+    <p class="intro">I build machine learning that works where it is needed. On one side, small, energy-efficient models that run on wearable, IoT, and energy-harvesting devices, using early-exit networks that cut energy use by up to 60% with less than 1% accuracy loss. On the other, clinical AI: a digital twin and prognostic agent for severe traumatic brain injury, developed with St. Luke’s Rehabilitation Institute and the WSU Elson S. Floyd College of Medicine.</p>
+    <nav class="actions" aria-label="Links">
+      <a class="btn primary" href="resume.pdf">CV (PDF)</a>
+      <a class="btn" href="https://www.linkedin.com/in/negar-haghpanahi/" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/Negar-Haghpanahi" rel="noopener">GitHub</a>
+      <a class="btn" href="mailto:negar.haghpanahi@wsu.edu">negar.haghpanahi@wsu.edu</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Research</h2>
+    <div class="item">
+      <h3><a href="https://negar-haghpanahi.github.io/tbi-twin/">Clinical digital twin for severe traumatic brain injury</a></h3>
+      <p class="meta">TBI Model Systems National Database · Python, scikit-learn, XGBoost, PyTorch · with St. Luke’s Rehabilitation Institute and WSU College of Medicine</p>
+      <p>A digital twin that predicts recovery milestones after moderate-to-severe TBI (time to follow commands, post-traumatic amnesia, and long-term outcome) and updates its forecast as recovery unfolds. Includes missing-data handling, ensemble feature selection, more than 12 benchmarked models, and a reinforcement-learning agent for long-term follow-up.</p>
+    </div>
+    <div class="item">
+      <h3>Early-exit inference for edge and wearable devices</h3>
+      <p class="meta">AdaExit · SEE-RF · DIAL · EMI · PyTorch, TensorFlow</p>
+      <p>Models that stop computing as soon as they are confident enough, saving energy on small devices.</p>
+      <ul class="dots">
+        <li><strong>AdaExit:</strong> confidence-based early exits; 50–60% less energy with under 1% accuracy loss across six wearable-sensor benchmarks.</li>
+        <li><strong>SEE-RF:</strong> sensor-aware early-exit random forests for IoT time-series applications.</li>
+        <li><strong>DIAL:</strong> energy management for energy-harvesting IoT devices using early-exit classifiers.</li>
+        <li><strong>EMI:</strong> Bayesian optimization of the energy–accuracy trade-off, with a runtime controller deployed on NVIDIA GPU and Raspberry Pi.</li>
+        <li>Early exits combined with dynamic sampling frequency for efficient time-series classification.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <h3>LLM-augmented next-action prediction</h3>
+      <p class="meta">2025 · PyTorch, Transformers</p>
+      <p>Compared LSTM and LLM-augmented models on smart-home activity data, analyzing the trade-off between edge latency and accuracy.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Publications and presentations</h2>
+    <ul class="plain">
+      <li>Belhaj S*, <strong>Haghpanahi N</strong>*, Nelson, Bhat G, et al. Energy-efficient time series applications on IoT devices via sensor-aware early exit random forest architectures (SEE-RF). <em>ESWeek</em>, 2026. <span class="meta">*Equal contribution</span></li>
+      <li><strong>Haghpanahi N</strong>, Bhat G, Kemp A, Jackson F. Building and evaluating a digital twin for severe traumatic brain injury: predicting recovery milestones and refining prognosis through sequential updating. <em>American Congress of Rehabilitation Medicine (ACRM) Annual Conference</em>, 2026. Poster. <a href="https://negar-haghpanahi.github.io/tbi-twin/">Poster page</a></li>
+      <li><strong>Haghpanahi N</strong>, Alizadehziri F, Bhat G. Adaptive early exits with dynamic sampling frequency for efficient time-series classification. <span class="meta">Under review.</span></li>
+      <li><strong>Haghpanahi N</strong>, Jackson F, Kemp A, Bhat G. Designing for accelerated translation of a prognostic agent in traumatic brain injury. <span class="meta">In preparation.</span></li>
+      <li><strong>Haghpanahi N</strong>, Alizadehziri F, Bhat G. DIAL: re-imagining energy management in energy-harvesting IoT devices via early exit classifiers. <span class="meta">In preparation.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="item">
+      <div class="row"><h3>Graduate Research Assistant, Washington State University</h3><span class="when">2025 – present</span></div>
+      <p>Edge AI and early-exit architectures; clinical digital twin for TBI; training on the Kamiak HPC cluster.</p>
+    </div>
+    <div class="item">
+      <div class="row"><h3>Research Collaborator, Augusta University</h3><span class="when">2022 – 2024</span></div>
+      <p>Machine learning for differential diagnosis of ear disease; acoustic side-channel research on keyboards.</p>
+    </div>
+    <div class="item">
+      <div class="row"><h3>AI Developer, BizGPT (remote)</h3><span class="when">2024</span></div>
+      <p>Built an LLM-powered chatbot with LangChain and Hugging Face, and automated data pipelines with Apache Airflow.</p>
+    </div>
+    <div class="item">
+      <div class="row"><h3>Data Engineer, Bahar Ertebat Gostar</h3><span class="when">2022 – 2024</span></div>
+      <p>Machine learning and clustering pipelines in Python; database and SQL performance optimization.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="item">
+      <div class="row"><h3>PhD (Direct Path), Computer Science</h3><span class="when">2025 – present</span></div>
+      <p class="meta">Washington State University · GPA 3.98/4.0 · Advisor: Dr. Ganapati Bhat · M.S. earned en route (Fall 2026)</p>
+    </div>
+    <div class="item">
+      <div class="row"><h3>B.Sc., Computer Science</h3><span class="when">2019 – 2023</span></div>
+      <p class="meta">Amirkabir University of Technology</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Teaching</h2>
+    <ul class="plain">
+      <li><strong>Washington State University</strong> (2025 – 2026): Teaching Assistant for Big Data, Advanced Data Structures, Cyber Security, Computer Programming, Database Systems, and Program Design &amp; Development.</li>
+      <li><strong>Amirkabir University of Technology</strong> (2022 – 2024): Teaching Assistant for Numerical Linear Algebra, Principles of Software Design, and Programming Languages.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Awards and service</h2>
+    <ul class="plain">
+      <li>Winner, Call for Ideas, Washington State Academy of Sciences, 2026: energy-neutral edge AI for agriculture</li>
+      <li>2nd Place, AgAID Digital AgAthon, 2025: predictive ML workflows for crop residue coverage</li>
+      <li>NVIDIA Fundamentals of Deep Learning certification, 2025</li>
+      <li>Reviewer, <em>IEEE Design &amp; Test</em>, 2026</li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <p><b>Machine learning:</b> PyTorch, TensorFlow, scikit-learn, XGBoost, SHAP, CNNs, LSTMs, Transformers, early-exit networks, model compression, quantization, Bayesian optimization, reinforcement learning</p>
+    <p><b>LLM systems:</b> LangChain, Hugging Face, RAG, agentic and on-device AI</p>
+    <p><b>Systems:</b> Python, C/C++, SQL, Linux, Git, Slurm/HPC, Apache Airflow, MongoDB, NVIDIA GPU and Raspberry Pi deployment</p>
+  </section>
+
+  <footer>Negar Haghpanahi · Washington State University</footer>
+</main>
+</body>
+</html>
